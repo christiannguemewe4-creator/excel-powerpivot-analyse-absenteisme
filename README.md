@@ -72,6 +72,20 @@ Les 10 collaborateurs les plus absents ne représentent que **0,2 %** des jours 
 - Les motifs d'absence ne sont pas disponibles : les causes proposées restent des **hypothèses** à vérifier sur le terrain.
 - Données RH fictives, issues d'un jeu de données pédagogique ; elles sont incluses dans le modèle de données du fichier Excel.
 
+## Méthode et utilisation de l'IA
+
+J'ai utilisé **Claude** comme assistant de travail :
+- **Code** : aide aux étapes Power Query et aux mesures DAX, et au débogage.
+- **Rédaction** : reformulation des conclusions pour un public non technique.
+- **Jeu de rôle « manager »** : Claude a joué le rôle d'un manager qui pose des questions business ; j'y ai répondu par l'analyse.
+
+**Vérification des résultats :**
+- contrôle qualité sur les 814 428 lignes : 0 % d'erreurs et de valeurs vides, aucun doublon (collaborateur × mois) ;
+- détection et correction d'un type mal reconnu (« 01 - Janvier » converti à tort en date) ;
+- relecture du code proposé par Claude, et correction quand il se trompait.
+
+L'analyse, l'interprétation des résultats et les recommandations finales sont les miennes.
+
 ## Fichiers
 
 - `Analyse_Absenteisme_RH.xlsx` : le classeur complet (requêtes Power Query, modèle Power Pivot, mesures DAX, analyses Q1 à Q5, dashboard)
